@@ -21,7 +21,7 @@ const StyledButton = styled.div`
 
 const Button = (props) => {
   return (
-    <StyledButton>{props.num}</StyledButton>
+    <StyledButton onClick={(e) => props.click(e.target.innerHTML)}>{props.num}</StyledButton>
   )
 }
 
